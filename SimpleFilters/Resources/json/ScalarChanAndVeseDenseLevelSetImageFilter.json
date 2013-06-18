@@ -1,0 +1,39 @@
+{
+  "name" : "ScalarChanAndVeseDenseLevelSetImageFilter",
+  "template_code_filename" : "ImageFilter",
+  "template_test_filename" : "ImageFilter",
+  "number_of_inputs" : 2,
+  "pixel_types" : "RealPixelIDTypeList",
+  "filter_type" : "itk::ScalarChanAndVeseDenseLevelSetImageFilter<InputImageType, InputImageType, InputImageType, itk::ScalarChanAndVeseLevelSetFunction< InputImageType, InputImageType > >",
+  "custom_set_input" : "filter->SetFunctionCount( 1 ); filter->SetLevelSet( 0, image1 ); filter->SetInput( image2 );",
+  "members" : [
+    {
+      "name" : "MaximumRMSError",
+      "type" : "double",
+      "default" : 0.02,
+      "doc" : "Value of RMS change below which the filter should stop. This is a convergence criterion."
+    },
+    {
+      "name" : "NumberOfIterations",
+      "type" : "uint32_t",
+      "default" : "1000u",
+      "doc" : "Number of iterations to run"
+    }
+  ],
+  "measurements" : [
+    {
+      "name" : "ElapsedIterations",
+      "type" : "uint32_t",
+      "default" : 0,
+      "briefdescriptionGet" : "Number of iterations run."
+    },
+    {
+      "name" : "RMSChange",
+      "type" : "double",
+      "default" : 0.0,
+      "briefdescriptionGet" : "The Root Mean Square of the levelset upon termination."
+    }
+  ],
+  "tests" : [
+  ]
+}
