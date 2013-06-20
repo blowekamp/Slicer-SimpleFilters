@@ -10,7 +10,7 @@
     {
       "name" : "InsideValue",
       "type" : "double",
-      "default" : "1u",
+      "default" : "1",
       "pixeltype" : "Input",
       "briefdescriptionSet" : "",
       "detaileddescriptionSet" : "Set/Get intensity value representing the interior of objects in the mask\n",
@@ -20,7 +20,7 @@
     {
       "name" : "OutsideValue",
       "type" : "double",
-      "default" : "0u",
+      "default" : "0",
       "pixeltype" : "Input",
       "briefdescriptionSet" : "",
       "detaileddescriptionSet" : "Set/Get intensity value representing non-objects in the mask\n",

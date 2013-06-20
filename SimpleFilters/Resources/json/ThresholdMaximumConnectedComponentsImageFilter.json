@@ -18,7 +18,7 @@
     {
       "name" : "UpperBoundary",
       "type" : "double",
-      "default" : "std::numeric_limits<double>::max()",
+      "default" : "3.40282e+038",
       "pixeltype" : "Input",
       "custom_itk_cast" : "filter->SetUpperBoundary( static_cast<typename InputImageType::PixelType> ( std::min<double>( this->m_UpperBoundary, itk::NumericTraits<typename InputImageType::PixelType>::max() ) ) );",
       "briefdescriptionSet" : "",
