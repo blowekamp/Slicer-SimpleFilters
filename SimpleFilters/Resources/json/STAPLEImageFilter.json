@@ -29,7 +29,7 @@
     {
       "name" : "MaximumIterations",
       "type" : "unsigned int",
-      "default" : " 2147483647",
+      "default" : "4294967295",
       "briefdescriptionSet" : "",
       "detaileddescriptionSet" : "Set/Get the maximum number of iterations after which the STAPLE algorithm will be considered to have converged. In general this SHOULD NOT be set and the algorithm should be allowed to converge on its own.\n",
       "briefdescriptionGet" : "",
